@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Filtering</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .card {
+            box-shadow: 1px 1px 2px 2px;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 1.2rem;
+            transition: all 0.4s ease;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+
+            img {
+                width: 100%;
+                transition: all 0.4s ease;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+        .btn-conatiner {
+            display: flex;
+            width: 95%;
+            margin: 0 auto;
+            padding: 8px;
+            gap: 5px;
+            justify-content: space-evenly;
+            margin-bottom: 20px;
+            transition: all 0.4s ease;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+
+            button {
+                font-size: 1rem;
+                padding: 10px;
+                border-radius: 10px;
+                border: none;
+                background-color: rgba(151, 148, 148, 0.644);
+
+                &:hover {
+                    background-color: rgba(26, 23, 23, 0.644);
+                    color: white;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn-conatiner" id="btn-conatiner">
+    </div>
+    <div class="container" id="container"></div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
